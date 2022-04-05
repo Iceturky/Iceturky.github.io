@@ -1,0 +1,38 @@
+<!doctype html><html><head><meta charset=UTF-8><title>test - By Iceturky</title><link rel=stylesheet href=https://cdn.staticfile.org/font-awesome/4.7.0/css/font-awesome.min.css><link rel=stylesheet href=https://cdn.staticfile.org/prism/1.15.0/themes/prism.min.css><link rel=stylesheet href=https://cdn.staticfile.org/KaTeX/0.10.0-rc.1/katex.min.css><link href=./css/chunk-vendors.4e4765ff.css rel=stylesheet></head><body><div><article id=webslides><section slide class="slide bg-black-blue aligncenter" image="https://source.unsplash.com/C1HhAQrbykQ/ .dark"><span class="background dark" style="background-image:url('https://source.unsplash.com/C1HhAQrbykQ/')"></span><div class=wrap wrap=true><h1 class="text-landing text-shadow">test</h1><p class=text-intro>By Iceturky</p><p><a href=https://github.com/ksky521/nodeppt class="button ghost" target=_blank><i class="fa fa-github"></i> Github</a></p></div></section><section slide class=slide><div class=wrap wrap=true><h1>have fun ;)</h1><pre class=language-textile><code class=language-textile><span class="token phrase">//this is a c++ program
+#include</span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>cstdio</span><span class="token punctuation">></span></span>
+<span class="token phrase">using namespace std;
+int main()
+{
+    printf("Hello world!");
+    return 0;
+}
+</span></code></pre></div></section><section slide class=slide><div class=wrap wrap=true><p><span class=katex><span class=katex-mathml><math><semantics><mrow><mi>max</mi><mo>(</mo><mi>a</mi><mo separator=true>,</mo><mi>b</mi><mo>)</mo></mrow><annotation encoding=application/x-tex>\max(a,b)</annotation></semantics></math></span><span class=katex-html aria-hidden=true><span class=strut style=height:0.75em;></span><span class="strut bottom" style=height:1em;vertical-align:-0.25em;></span><span class="base textstyle uncramped"><span class=mop>max</span><span class=mopen>(</span><span class="mord mathit">a</span><span class=mpunct>,</span><span class="mord mathit">b</span><span class=mclose>)</span></span></span></span></p><p><s>nodeppt真有意思</s></p></div></section></article></div><script src=https://cdn.staticfile.org/echarts/4.8.0/echarts.min.js></script><script>window.pluginsOptions = {}
+
+
+
+    window.webslidesOptions = {}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    let isPrintMode = false;
+    if(~location.search.indexOf('print-pdf')){
+        isPrintMode = true;
+        WebSlides.registerPlugin('scroll', function(){});
+    }
+    const wsOptions = {
+        loop: false
+    };
+    if(window.webslidesOptions){
+        for (let i in webslidesOptions){
+            if(webslidesOptions.hasOwnProperty(i)){
+                wsOptions[i] = webslidesOptions[i];
+            }
+        }
+    }
+    const ws = new WebSlides(wsOptions)
+
+    window.wsInstance = ws;
+    if(isPrintMode){
+        ws.slides.forEach(s=>s.show())
+    }
+}, false)</script><script src=./js/chunk-vendors.js></script><script src=./js/test.js></script></body></html>
